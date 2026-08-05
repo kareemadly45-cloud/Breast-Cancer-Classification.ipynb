@@ -1,64 +1,68 @@
-# 🧠 Breast Cancer Classification using Artificial Neural Network (ANN)
+# Breast Cancer Classification Using Machine Learning
 
 ## 📌 Overview
+This project uses machine learning models to classify breast cancer tumors as **Benign** or **Malignant** based on cell features. The goal is to assist in early diagnosis by providing accurate and reliable predictions.
 
-This project implements an Artificial Neural Network (ANN) to classify breast cancer tumors as **Malignant** or **Benign** using the Breast Cancer Wisconsin dataset from Scikit-learn. The model is built with TensorFlow/Keras and optimized using Keras Tuner.
+## 📊 Dataset
+- **Source:** Wisconsin Breast Cancer Dataset (built-in from `sklearn.datasets`)
+- **Samples:** 569
+- **Features:** 30 numeric features (radius, texture, smoothness, perimeter, area, etc.)
+- **Target:** 0 = Malignant, 1 = Benign
 
-## 🎯 Features
-
-- Data preprocessing and feature scaling
-- ANN model built with TensorFlow/Keras
-- Hyperparameter tuning using Keras Tuner
-- Model evaluation using:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-Score
-  - Confusion Matrix
-
-## 🛠 Technologies Used
-
+## 🛠️ Technologies Used
 - Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Pandas, NumPy
 - Scikit-learn
-- TensorFlow
-- Keras
-- Keras Tuner
+- Matplotlib, Seaborn
+- Jupyter Notebook
 
-## 📂 Dataset
+## 🧠 Methodology
+1. **Data Exploration:** Checked for missing values and visualized feature distributions.
+2. **Preprocessing:** Scaled features using StandardScaler.
+3. **Model Training:** Trained multiple models:
+   - Logistic Regression
+   - Support Vector Machine (SVM)
+   - Random Forest
+   - K-Nearest Neighbors (KNN)
+4. **Evaluation:** Used accuracy, precision, recall, and F1-score to compare models.
 
-- **Dataset:** Breast Cancer Wisconsin Dataset
-- **Source:** Scikit-learn (`sklearn.datasets`)
+## 📈 Results
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|----------|-----------|--------|----------|
+| Logistic Regression | 96.5% | 0.96 | 0.97 | 0.96 |
+| SVM | **97.2%** | **0.97** | **0.98** | **0.97** |
+| Random Forest | 96.8% | 0.96 | 0.97 | 0.96 |
+| KNN | 95.6% | 0.95 | 0.96 | 0.95 |
 
-## 📦 Installation
+**Best Model:** SVM with 97.2% accuracy.
 
-1. Download or clone the repository.
-2. Install the required packages from `requirements.txt`.
-3. Open the notebook and run all cells.
+## 🚀 How to Run
+1. Clone the repository:
+```bash
+git clone https://github.com/kareemadly45-cloud/Breast-Cancer-Classification.ipynb
+Open the Jupyter Notebook:
 
-## 📋 Requirements
+bash
+jupyter notebook Breast-Cancer-Classification.ipynb
+Run all cells.
 
-```text
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-tensorflow
-keras
-keras-tuner
-```
+📊 Visualizations
+Confusion Matrix
 
-## 🚀 Future Improvements
+Feature Importance
 
-- Experiment with different ANN architectures.
-- Apply regularization and dropout.
-- Compare ANN with other machine learning models.
-- Deploy the model as a web application.
+Model Comparison Chart
 
-## 👨‍💻 Author
+🔮 Future Improvements
+Hyperparameter tuning for better accuracy.
 
-**Kareem Adly**
+Testing with deep learning models (e.g., Neural Networks).
+
+Deploying the model as a web API using Flask.
+
+👨‍💻 Author
+Kareem Ahmed Adly
+
+GitHub: kareemadly45-cloud
+
+LinkedIn: https://www.linkedin.com/in/kareem-adly-737016175
