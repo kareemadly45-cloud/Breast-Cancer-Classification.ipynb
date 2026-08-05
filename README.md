@@ -1,4 +1,4 @@
-# Breast Cancer Classification Using Machine Learning
+# Breast Cancer Classification Using Artificial Neural Networks (ANN)
 
 ## 📌 Overview
 This project uses machine learning models to classify breast cancer tumors as **Benign** or **Malignant** based on cell features. The goal is to assist in early diagnosis by providing accurate and reliable predictions.
