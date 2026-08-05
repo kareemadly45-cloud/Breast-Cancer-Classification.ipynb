@@ -38,7 +38,7 @@ This project uses machine learning models to classify breast cancer tumors as **
 
 ## 🚀 How to Run
 1. Clone the repository:
-```bash
+bash
 git clone https://github.com/kareemadly45-cloud/Breast-Cancer-Classification.ipynb
 Open the Jupyter Notebook:
 
